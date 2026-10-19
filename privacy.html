@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="24365 v2 のプライバシーポリシー">
+  <title>プライバシーポリシー | 24365 v2</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif; color: #202124; background: #f7f8fa; }
+    body { max-width: 820px; margin: 0 auto; padding: 40px 20px; line-height: 1.85; }
+    main { background: #fff; padding: clamp(24px, 5vw, 48px); border-radius: 16px; box-shadow: 0 8px 32px #20212410; }
+    h1 { line-height: 1.35; }
+    h2 { margin-top: 2em; font-size: 1.2rem; }
+    a { color: #176b5b; }
+    .date, footer { color: #5f6368; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="./">24365 v2 トップページ</a></p>
+    <h1>プライバシーポリシー</h1>
+    <p class="date">制定日: 2026年10月19日</p>
+    <p>24365 v2（以下「本アプリ」）は、運営者本人の個人利用を目的とした Android アプリです。本ポリシーでは、本アプリが音声と Google アカウントのデータをどのように扱うかを説明します。</p>
+
+    <h2>1. 取り扱う情報</h2>
+    <ul>
+      <li>利用者が本アプリに共有する音声ファイル。</li>
+      <li>音声から生成される文字起こし、要約、処理状況。</li>
+      <li>Google Drive への保存やメール送信に必要なファイル識別情報、処理記録。</li>
+      <li>Google OAuth 認証に必要な認証情報。更新トークンはアプリのサーバー側シークレットとして保管し、Android 端末や公開ページには保存しません。</li>
+    </ul>
+
+    <h2>2. Google データへのアクセスと利用</h2>
+    <p>本アプリは Google OAuth を使い、Google Drive に文字起こし・要約を保存し、Gmail から指定された宛先へ処理結果を送信します。認証画面では Drive の広い範囲に対する権限が表示される場合がありますが、アプリの処理は設定された保存先フォルダと、本アプリが作成したファイルに限って行います。Gmail は送信のみに使用し、受信トレイの読み取りやメールの削除は行いません。</p>
+    <p>Google から取得したデータは、上記機能を提供する目的だけに使用し、広告、販売、第三者への独自提供には使用しません。Google API のデータは Google Drive と Gmail の各アカウントにも保存され、それぞれのサービス上の設定・保持期間に従います。</p>
+
+    <h2>3. 音声・文字起こし・要約の処理</h2>
+    <p>音声は Cloudflare のサーバーで一時保管され、OpenAI API を使った文字起こしと要約のために送信されます。処理に必要な範囲で、音声、文字起こし、要約が各サービス事業者に送られます。OpenAI API に送信されたデータの取扱いは <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API のデータ管理について</a>をご確認ください。</p>
+    <p>音声ファイルは処理と配送がすべて成功した後に削除します。処理が失敗した場合、再試行のため一時保管されることがありますが、Cloudflare のライフサイクル設定により最長7日で削除されます。</p>
+    <p>文字起こし、要約、配送データは再試行・処理確認のため Cloudflare のサーバー側にも保存されます。現行設定ではこれらの成果物と処理記録に自動削除期限を設けていません。削除を希望する場合は、下記の連絡先へお知らせください。Google Drive や Gmail に配信済みのコピーは、それぞれの Google アカウント上で削除してください。</p>
+
+    <h2>4. 外部サービス</h2>
+    <p>本アプリの運用では、機能提供に必要な範囲で次のサービスを利用します。各事業者による情報の取扱いは、各社のポリシーに従います。</p>
+    <ul>
+      <li>Google Drive / Gmail: 保存・メール送信 (<a href="https://policies.google.com/privacy?hl=ja">Google プライバシーポリシー</a>)</li>
+      <li>OpenAI API: 音声の文字起こし・要約 (<a href="https://openai.com/policies/privacy-policy/">OpenAI プライバシーポリシー</a>)</li>
+      <li>Cloudflare: アプリのサーバーと一時・成果物データの保管 (<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare プライバシーポリシー</a>)</li>
+      <li>GitHub Pages: 本ポリシーとアプリ紹介ページの公開 (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">GitHub プライバシーに関する声明</a>)</li>
+    </ul>
+
+    <h2>5. 安全管理と第三者提供</h2>
+    <p>OAuth 認証情報や API キーはサーバー側のシークレットとして保管し、公開リポジトリや本ページに掲載しません。運営者は、法令に基づく場合を除き、処理を委託する上記サービス事業者以外に個人データを提供しません。</p>
+
+    <h2>6. 利用者と録音対象者へのお願い</h2>
+    <p>録音には会話参加者の個人情報が含まれることがあります。利用者は、録音・共有・処理を行う前に、必要な同意や権限を確認してください。本アプリは、第三者へ配布する録音サービスとして設計されていません。</p>
+
+    <h2>7. ポリシーの変更</h2>
+    <p>本アプリの機能やデータの取扱いを変更した場合、本ページを更新します。重要な変更は、ページ上に記載する改定日でお知らせします。</p>
+
+    <h2>8. お問い合わせ・削除依頼</h2>
+    <p>データの取扱いに関する質問や削除依頼は、Google OAuth の同意画面に表示されるサポートメールからご連絡ください。</p>
+  </main>
+  <footer><p>© 2026 24365 v2</p></footer>
+</body>
+</html>
